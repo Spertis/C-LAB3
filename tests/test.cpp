@@ -14,8 +14,9 @@ TEST(Test, UseCount) {
   int val = 5;
   SharedPtr<int> sp1 (&val);
   SharedPtr<int> sp2(sp1);
-  SharedPtr<int> sp3(sp2);
-  EXPECT_EQ(sp1.use_count(),3);
+  SharedPtr<int> sp3(sp1);
+  SharedPtr<int> sp4(sp3);
+  EXPECT_EQ(sp1.use_count(),4);
 }
 TEST(Test, Clas_Strelka) {
   class Values{
