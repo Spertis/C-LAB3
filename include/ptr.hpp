@@ -39,7 +39,7 @@ class SharedPtr {
   ~SharedPtr(){
     if ((*this->counter) < 2)
     {
-      delete this->counter;
+      (*this->counter)=0;
     } else {
       this->ptr = nullptr;
       (*this->counter)--;
