@@ -6,7 +6,6 @@
 
 
 int main() {
-//  std::cout << "Test!"<<"\n";
 
   int *p = new int{5};
 
