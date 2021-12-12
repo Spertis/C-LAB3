@@ -1,4 +1,4 @@
-// Copyright by Enigma
+// Copyright by Spertis
 
 #include <iostream>
 
@@ -6,9 +6,9 @@
 
 
 int main() {
-  std::cout << "Test!"<<"\n";
 
   int *p = new int{5};
+//  std::cout << p <<"\n";
 
 
   SharedPtr sh1(p);
